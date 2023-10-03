@@ -27,7 +27,6 @@ int main() {
     return 0;
 }
 
-
 typedef struct {
     char name[50];
     double price;
