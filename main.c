@@ -13,7 +13,7 @@ int main() {
     int choice;
     printf("Enter your choice (1/2/3): ");
     scanf("%d", &choice);
-
+    
     if (choice == 1) {
         printf("You selected Tea.\n");
     } else if (choice == 2) {
