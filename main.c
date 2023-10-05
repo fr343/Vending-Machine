@@ -26,21 +26,24 @@ if (choice == 0) {
         printf("Invalid choice. Please select a valid option (0/1/2/3).\n");
     }
 
+ // Confirmation
+        char confirm;
+        printf("Confirm your selection (Yes/No): ");
+        scanf(" %c", &confirm); 
+
+        if (confirm == 'Yes' || confirm == 'y') {
+            printf("Thank you for your purchase!\n");
+            break;
+        } else if (confirm == 'No' || confirm == 'n') {
+            continue; 
+        } else {
+            printf("Invalid input. Please enter 'Yes' to confirm or 'No' to choose again.\n");
+            continue; 
+        }
+    }
+
     return 0;
-}
 
-typedef struct {
-    char name[50];
-    double price;
-    int quantity;
-    int min_quantity;
-} Item;
-
-Item vendingMachine[] = {
-    {"Coffee", 1.5, 10, 3},
-    {"Tea", 1.0, 15, 5},
-    {"Water", 0.75, 20, 8}
-};
 
 
 
